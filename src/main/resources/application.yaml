@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    username: irenkia@authresource
+    password: syperhero@54321
+    url: jdbc:sqlserver://authresource.database.windows.net:1433;database=auth;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+  jpa:
+    show-sql: 'true'
+    hibernate:
+      ddl-auto: update
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+server:
+  port: 9191
+
+
